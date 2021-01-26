@@ -1,0 +1,232 @@
+START
+worldSeed: -219413295831715288
+RightTurn -1
+LeftTurn -1
+Corridor -1 -1 -1
+SmallCorridor
+SmallCorridor
+Corridor -1 -1 -1
+FiveWayCrossing -1 -1 -1 -1 -1
+SmallCorridor
+FiveWayCrossing -1 -1 -1 -1 -1
+LeftTurn -1
+RightTurn -1
+Corridor -1 -1 -1
+SmallCorridor
+SmallCorridor
+Corridor -1 -1 -1
+RightTurn -1
+Corridor -1 -1 -1
+SmallCorridor
+SmallCorridor
+LeftTurn -1
+Corridor -1 -1 -1
+RightTurn -1
+SmallCorridor
+SmallCorridor
+RightTurn -1
+LeftTurn -1
+Corridor -1 -1 -1
+LeftTurn -1
+RightTurn -1
+SmallCorridor
+FiveWayCrossing -1 -1 -1 -1 -1
+RightTurn -1
+RightTurn 6
+Stairs 20
+Corridor 18 28 12
+RightTurn 7
+Corridor 16 -1 -1
+RightTurn 0
+LeftTurn 1
+Corridor 24 -1 34
+Corridor 2 -1 -1
+LeftTurn 19
+Corridor 31 36 -1
+Corridor 38 -1 40
+LeftTurn 13
+SmallCorridor
+Corridor 8 -1 -1
+Corridor -1 -1 -1
+Corridor 32 44 -1
+Corridor 14 15 47
+RightTurn 37
+SmallCorridor
+LeftTurn 26
+RightTurn 45
+Corridor 46 52 17
+Corridor 42 -1 35
+LeftTurn 50
+Corridor 29 54 22
+LeftTurn 41
+SmallCorridor
+PrisonHall 5
+LeftTurn 25
+Corridor 55 -1 3
+Corridor 43 -1 30
+SmallCorridor
+LeftTurn 27
+LeftTurn 48
+SmallCorridor
+LeftTurn 10
+RightTurn 11
+Corridor 21 9 4
+RightTurn 58
+LeftTurn 39
+Corridor 66 -1 -1
+LeftTurn 59
+SmallCorridor
+Corridor 71 -1 -1
+RightTurn 49
+PrisonHall 77
+SmallCorridor
+RightTurn 72
+RightTurn 67
+Corridor 78 -1 -1
+LeftTurn 56
+Corridor 70 75 60
+Corridor 80 74 23
+RightTurn 73
+LeftTurn 79
+SmallCorridor
+Corridor 64 -1 -1
+LeftTurn 69
+Corridor 63 -1 -1
+Corridor 90 -1 81
+LeftTurn -1
+SmallCorridor
+LeftTurn 86
+RightTurn 89
+SmallCorridor
+Corridor 91 -1 93
+RightTurn 53
+LeftTurn 94
+Corridor -1 -1 -1
+RightTurn 83
+Corridor 87 102 84
+RightTurn 92
+SmallCorridor
+LeftTurn 68
+RightTurn 97
+LeftTurn 104
+SmallCorridor
+RightTurn 82
+SmallCorridor
+RightTurn 109
+RightTurn 106
+Corridor 98 -1 -1
+Corridor 114 -1 99
+SquareRoom 76 100 96
+RightTurn 61
+Library
+RightTurn 107
+RightTurn 103
+LeftTurn 110
+SpiralStaircase 65
+SmallCorridor
+RightTurn 88
+Corridor 95 85 33
+LeftTurn 105
+SmallCorridor
+Corridor 126 124 -1
+RightTurn 113
+Corridor 115 -1 -1
+SmallCorridor
+Corridor 116 111 -1
+RightTurn 117
+RightTurn 121
+SpiralStaircase 129
+Corridor 133 -1 128
+SquareRoom 57 108 131
+Stairs 120
+Corridor 136 138 130
+Corridor 122 -1 -1
+LeftTurn 139
+LeftTurn 134
+SpiralStaircase 141
+RightTurn 51
+RightTurn 125
+RightTurn 137
+Corridor 145 -1 -1
+SmallCorridor
+Corridor 112 -1 135
+RightTurn 132
+Corridor 101 127 142
+Corridor 140 -1 119
+LeftTurn 150
+LeftTurn 152
+RightTurn 154
+SmallCorridor
+RightTurn 143
+LeftTurn 147
+SquareRoom 151 155 156
+LeftTurn 146
+SmallCorridor
+Corridor 159 62 -1
+SmallCorridor
+RightTurn 162
+Corridor 118 -1 144
+Corridor 165 148 -1
+SpiralStaircase 158
+ChestCorridor 157
+SmallCorridor
+LeftTurn 123
+ChestCorridor 153
+RightTurn 164
+RightTurn 166
+LeftTurn 172
+RightTurn 174
+ChestCorridor 167
+Corridor 173 170 -1
+LeftTurn 161
+RightTurn 149
+SmallCorridor
+LeftTurn 163
+Stairs 176
+LeftTurn 177
+Corridor 168 180 178
+RightTurn 160
+LeftTurn 184
+SquareRoom 185 171 179
+SmallCorridor
+RightTurn 169
+Corridor 181 188 -1
+Corridor 187 -1 190
+Library
+PrisonHall 183
+SmallCorridor
+Stairs 175
+RightTurn -1
+Corridor 193 -1 194
+RightTurn 189
+PortalRoom
+Corridor 182 -1 -1
+Corridor 199 197 -1
+LeftTurn 195
+SquareRoom 198 -1 200
+Corridor 201 -1 -1
+SpiralStaircase 186
+RightTurn 196
+Corridor 191 202 -1
+PrisonHall 192
+LeftTurn 207
+SmallCorridor
+Corridor 208 -1 -1
+RightTurn 205
+LeftTurn 210
+SmallCorridor
+Corridor -1 -1 -1
+Corridor 209 -1 214
+RightTurn 204
+Corridor 212 216 213
+RightTurn -1
+PrisonHall 211
+Corridor 203 -1 206
+Stairs 220
+FiveWayCrossing 217 -1 221 -1 -1
+ChestCorridor 223
+Corridor 215 222 -1
+SquareRoom 219 218 224
+FiveWayCrossing 226 -1 -1 -1 225
+Start 227
+END
