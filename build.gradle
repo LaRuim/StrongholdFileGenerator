@@ -11,6 +11,9 @@ repositories {
 }
 
 dependencies {
+  // https://mvnrepository.com/artifact/commons-cli/commons-cli
+  compile group: 'commons-cli', name: 'commons-cli', version: '1.4'
+
 }
 
 jar {
@@ -23,3 +26,10 @@ jar {
     configurations.compile.collect {it.isDirectory() ? it: zipTree(it)}
   }
 }
+
+task copyJar(type: Copy) {
+    from jar
+    into "app"
+}
+
+build.dependsOn copyJar

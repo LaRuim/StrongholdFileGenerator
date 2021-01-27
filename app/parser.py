@@ -11,6 +11,11 @@ class StrongholdPiece:
             self.ChildrenIndices = list(map(int, RawParts[1:]))
         except:
             self.ChildrenIndices = [-1]
+    
+    def __add_backedge(self, Index):
+        if Index not in self.ChildrenIndices:
+            self.ChildrenIndices.append(Index)
+        self.BackwardExitIndex = Index
 
 @Register
 class PortalRoom(StrongholdPiece):
@@ -96,15 +101,21 @@ class DeadendPiece:
 Deadend = DeadendPiece()
 StructuredPieceList = list()
 
-RawPieceList = open("./sample_layout.txt", "r").read().split("\n")[2:-2]
+RawPieceList = open("./sample_layout", "r").read().split("\n")[2:-2]
 TotalRooms = len(RawPieceList)
 
 for Index in range(TotalRooms):
     RawParts = RawPieceList[Index].split()
     PieceName = RawParts[0]
-    StructuredPieceList.append(Pieces[PieceName](RawParts, Index))
+    Piece = Pieces[PieceName](RawParts, Index)
+    for ChildPieceIndex in Piece.ChildrenIndices:
+        if ChildPieceIndex+1:
+            StructuredPieceList[ChildPieceIndex]._StrongholdPiece__add_backedge(Index)
+    StructuredPieceList.append(Piece)
+StructuredPieceList[-1]._StrongholdPiece__add_backedge(-1)
 StructuredPieceList.append(Deadend)
 
 #AdjacencyLists = list((StructuredPieceList[Index], list(StructuredPieceList[ChildIndex] for ChildIndex in StructuredPieceList[Index].ChildrenIndices)) for Index in range(TotalRooms))
+IndexAdjacencyLists = dict(list((RoomStructure.Index, RoomStructure.ChildrenIndices) for RoomStructure in StructuredPieceList[:-1]))
 
-print(*reversed(list((str(Index)+". "+StructuredPieceList[Index].PieceName, list(str(ChildIndex)+". "+StructuredPieceList[ChildIndex].PieceName for ChildIndex in StructuredPieceList[Index].ChildrenIndices)) for Index in range(TotalRooms))), sep='\n')
+print(*list((str(Index)+". "+StructuredPieceList[Index].PieceName, list(str(ChildIndex)+". "+StructuredPieceList[ChildIndex].PieceName for ChildIndex in StructuredPieceList[Index].ChildrenIndices)) for Index in range(TotalRooms)), sep='\n')

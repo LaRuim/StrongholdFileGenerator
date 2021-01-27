@@ -45,16 +45,22 @@ Fire up a terminal in the root folder of the project. To build the Generator, ru
 
 ## Usage
 
-Navigate to build/libs. You should see a FeatureUtils.jar file. Now, in a terminal, run:
+Navigate to app. You should see a layout.jar file. To view the command-line-arguments, run:
 
 ```
-    java -jar FeatureUtils.jar > ../../sample_output
+    java -jar layout.jar -h
 ```
 
-Navigate back to the root directory of the project, where sample_output will have been created. Now run
+Now, in a terminal, run:
 
 ```
-    python parser.py > parsed_layout
+    java -jar layout.jar [OPTIONS] > sample_output.txt
+```
+
+Navigate back to the root directory of the project, where sample_output will have been created. Now run:
+
+```
+    python parser.py > parsed_layout.txt
 ```
 
 ## Contributing
